@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // console.log(a);
+        // const a = 1;
+        // console.log(a)
+        // const abj = {
+        //     a:1,
+        //     b:2
+        // };
+        // abj.a = abj.b;
+        // console.log(abj.a,abj.b)
+        // function com(split = ",",...args){
+        //    return args.join(split)
+        // }
+        // const a = `i love ${com(";","a","b","c")}`;
+        // console.log(a)
+        // const obj = {
+        //     a:1,
+        //     b:2,
+        //     sum : () =>{
+        //         return this.a 
+        //     }
+        // }
+        // console.log(obj.sum())
+        // const getA = (...args1) => (...args2) =>args1.concat(args2).reduce((a,b) => a + b,0);
+        // const result = getA(1,2,3)(4,5,6);
+        // console.log(result)
+        // function gsda({a=1,b=2,c=3}){
+        //     console.log(a,b,c);
+        // }
+        // gsda();
+        // var a = 8;
+        // var b = a+=a*=a/=a-6
+        // console.log(b)
+        let a = new Promise((resolve, reject) => {
+            let b = 1 + c; // ReferenceError: c is not defined，错误会在下面的a打印出来之后报出。
+            resolve(true);
+        })
+        console.log(1, a);
+        a.then(res => {
+                console.log(2, res);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    </script>
+</body>
+
+</html>
